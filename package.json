@@ -1,0 +1,22 @@
+{
+  "name": "telegram-checkpromise-bot",
+  "version": "0.0.1",
+  "description": "Стежимо за успіхами влади. З любов'ю до України Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prosvita/telegram-checkpromise-bot.git"
+  },
+  "keywords": [
+    "telegram-bot"
+  ],
+  "author": "Pavlo Bashynskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prosvita/telegram-checkpromise-bot/issues"
+  },
+  "homepage": "https://github.com/prosvita/telegram-checkpromise-bot#readme"
+}
