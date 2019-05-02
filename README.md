@@ -26,3 +26,13 @@ npm i --production
 # Запуск бота
 NODE_ENV=production TG_TOKEN="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" node index.js
 ```
+
+### Запуск в docker
+
+```sh
+docker run -d \
+    --name tg-checkpromise \
+    -e TG_TOKEN="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" \
+    -v $(pwd)/db:/app/db \
+    levonet/telegram-checkpromise-bot
+```
