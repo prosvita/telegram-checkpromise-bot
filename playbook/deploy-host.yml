@@ -1,0 +1,32 @@
+- name: Deploy (host)
+  hosts: "{{ deploy_group }}"
+  become: yes
+  become_method: sudo
+  tasks:
+
+  - name: Ensure directories exist
+    file:
+      state: directory
+      path: "{{ item.path }}"
+      mode: "{{ item.mode | default(0755) }}"
+      owner: "{{ item.owner | default('root') }}"
+      group: "{{ item.group | default('root') }}"
+    with_items:
+    - path: "{{ project_bot_home }}"
+      mode: "0700"
+    - path: "{{ project_bot_home }}/db"
+
+  - name: Run container
+    docker_container:
+      name: "{{ project_bot_name }}"
+      image: levonet/telegram-checkpromise-bot:latest
+      pull: yes
+      restart_policy: always
+      env:
+        TG_TOKEN: "{{ project_bot_token }}"
+      volumes:
+      - "{{ project_bot_home }}/db:/app/db"
+      log_driver: syslog
+      log_options:
+        syslog-facility: local0
+        tag: "{{ project_bot_name }}"

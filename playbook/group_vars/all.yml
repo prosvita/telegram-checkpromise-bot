@@ -1,0 +1,4 @@
+---
+project_bot_name: tg-checkpromise-bot
+project_bot_home: /opt/{{ project_bot_name }}
+project_bot_token:
