@@ -33,7 +33,7 @@ bot.use(sessionMW.middleware())
 bot.start(notifier.start())
 
 state.check()
-const job = schedule.scheduleJob(conf.schedule, async () => {
+schedule.scheduleJob(conf.schedule, async () => {
     const changes = await state.check()
     logger.info('GOT changes %d', changes.length)
     await notifier.notify(changes)
