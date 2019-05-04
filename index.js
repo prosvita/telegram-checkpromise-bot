@@ -3,7 +3,7 @@
 const conf = require('./lib/config')
 
 const Telegraf = require('telegraf')
-const LocalSession = require('telegraf-session-local')
+const LocalSession = require('telegraf-session-local') // https://github.com/typicode/lowdb
 const schedule = require('node-schedule') // https://github.com/node-schedule/node-schedule
 
 const LogMW = require('./lib/log')
@@ -35,7 +35,7 @@ bot.start(notifier.start())
 state.check()
 const job = schedule.scheduleJob(conf.schedule, async () => {
     const changes = await state.check()
-    logger.debug(`New changes: ${changes.length}`)
+    logger.info('GOT changes %d', changes.length)
     await notifier.notify(changes)
 })
 
