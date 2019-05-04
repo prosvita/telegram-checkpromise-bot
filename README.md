@@ -1,4 +1,5 @@
 # Telegram Bot для стеження за успіхами влади
+[![Build Status](https://travis-ci.org/prosvita/telegram-checkpromise-bot.svg?branch=master)](https://travis-ci.org/prosvita/telegram-checkpromise-bot)
 
 ## Розробка
 
