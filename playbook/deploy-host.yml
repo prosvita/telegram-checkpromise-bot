@@ -13,7 +13,8 @@
       group: "{{ item.group | default('root') }}"
     with_items:
     - path: "{{ project_bot_home }}"
-      mode: "0700"
+      mode: "0750"
+      group: jenkins
     - path: "{{ project_bot_home }}/db"
 
   - name: Run container

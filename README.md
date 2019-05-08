@@ -8,7 +8,7 @@
 npm i
 
 # Запуск сервера для завантаження даних
-npm run static
+npm run dev-static
 
 # Запуск бота
 TG_TOKEN="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" npm run dev
