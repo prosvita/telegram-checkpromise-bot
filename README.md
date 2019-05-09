@@ -37,3 +37,9 @@ docker run -d \
     -v $(pwd)/db:/app/db \
     levonet/telegram-checkpromise-bot
 ```
+
+## Deploy
+
+```sh
+TG_TOKEN="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" INVENTORY_HOSTNAME="server" npm run deploy
+```
