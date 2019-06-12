@@ -29,16 +29,16 @@
   "homepage": "https://github.com/prosvita/telegram-checkpromise-bot#readme",
   "dependencies": {
     "got": "^9.6.0",
-    "loglevel": "^1.6.1",
+    "loglevel": "^1.6.3",
     "node-schedule": "^1.3.2",
     "string-hash": "^1.1.3",
-    "telegraf": "^3.29.0",
+    "telegraf": "^3.30.1",
     "telegraf-i18n": "^6.5.0",
     "telegraf-session-local": "0.0.6"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "http-server": "^0.11.1",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.1"
   }
 }
