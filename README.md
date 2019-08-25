@@ -41,5 +41,5 @@ docker run -d \
 ## Deploy
 
 ```sh
-TG_TOKEN="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" INVENTORY_HOSTNAME="server" npm run deploy
+VERSION="$(date +%y%m%d%H%M)" TG_TOKEN="000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" INVENTORY_HOSTNAME="server" npm run deploy
 ```
