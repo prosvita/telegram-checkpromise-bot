@@ -20,7 +20,7 @@
   - name: Run container
     docker_container:
       name: "{{ project_bot_name }}"
-      image: levonet/telegram-checkpromise-bot:latest
+      image: "{{ project_bot_image }}"
       pull: yes
       restart_policy: always
       env:

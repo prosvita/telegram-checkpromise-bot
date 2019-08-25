@@ -1,4 +1,6 @@
 ---
+project_bot_version: latest
+project_bot_image: levonet/cp-tg-bot:{{ project_bot_version }}
 project_bot_name: tg-checkpromise-bot
 project_bot_home: /opt/{{ project_bot_name }}
 project_bot_token:
