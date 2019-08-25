@@ -25,6 +25,8 @@
       restart_policy: always
       env:
         TG_TOKEN: "{{ project_bot_token }}"
+        BITLY_TOKEN: "{{ project_bitly_token }}"
+        FACEBOOK_APP_ID: "{{ project_facebook_app_id }}"
       volumes:
       - "{{ project_bot_home }}/db:/app/db"
       log_driver: syslog

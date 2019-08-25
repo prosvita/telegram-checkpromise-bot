@@ -2,3 +2,5 @@
 project_bot_name: tg-checkpromise-bot
 project_bot_home: /opt/{{ project_bot_name }}
 project_bot_token:
+project_bitly_token:
+project_facebook_app_id:

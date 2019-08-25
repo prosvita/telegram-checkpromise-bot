@@ -9,7 +9,7 @@
     "dev-static": "$(npm bin)/http-server",
     "docker-build": "docker build -t levonet/telegram-checkpromise-bot:latest .",
     "docker-push": "docker push levonet/telegram-checkpromise-bot:latest",
-    "deploy-ansible": "cd playbook; ansible-playbook deploy-host.yml -e deploy_group=all -e project_bot_token=${TG_TOKEN} -i ${INVENTORY_HOSTNAME},",
+    "deploy-ansible": "cd playbook; ansible-playbook deploy-host.yml -i ${INVENTORY_HOSTNAME} -e deploy_group=all -e project_bot_token=${TG_TOKEN} -e project_bitly_token=${BITLY_TOKEN} -e project_facebook_app_id=${FACEBOOK_APP_ID},",
     "deploy": "npm run docker-build; npm run docker-push; npm run deploy-ansible",
     "lint": "$(npm bin)/eslint .",
     "test": "npm run lint"
@@ -28,8 +28,10 @@
   },
   "homepage": "https://github.com/prosvita/telegram-checkpromise-bot#readme",
   "dependencies": {
+    "bitly": "^6.1.0",
     "got": "^9.6.0",
     "loglevel": "^1.6.3",
+    "mem": "^5.1.1",
     "node-schedule": "^1.3.2",
     "string-hash": "^1.1.3",
     "telegraf": "^3.30.1",
