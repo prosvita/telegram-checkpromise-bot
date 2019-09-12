@@ -5,6 +5,7 @@
 anyText message: Sorry, I don't know how to read messages yet, everything will be with time ;)
 anyMessage message: Support, although and not understand this messages :)
 notify/completed: ✅ **Completed**!
+notify/notcompleted: ⛔️ **Not сompleted**!
 notify/improvements: 😀 **Improvement has come**!
 notify/treason: 🤢 **Treason**!
 notify/share facebook: Share on 📘Facebook
