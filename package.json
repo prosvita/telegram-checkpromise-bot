@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/prosvita/telegram-checkpromise-bot#readme",
   "dependencies": {
-    "bitly": "^6.1.0",
+    "bitly": "^7.0.1",
     "got": "^9.6.0",
     "loglevel": "^1.6.3",
     "mem": "^5.1.1",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "http-server": "^0.11.1",
+    "http-server": "^0.12.1",
     "husky": "^2.4.1",
     "nodemon": "^1.19.4"
   },
