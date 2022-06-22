@@ -29,7 +29,7 @@
   "homepage": "https://github.com/prosvita/telegram-checkpromise-bot#readme",
   "dependencies": {
     "bitly": "^7.0.1",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "loglevel": "^1.6.3",
     "mem": "^5.1.1",
     "node-schedule": "^1.3.2",
